@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas dan Keliling Lingkaran</title>
+</head>
+<body>
+    <h1>Mencari Luas dan Keliling Lingkaran</h1>
+     <hr><br>
+    <form id="formlingkaran">
+        <label for="diameter">Diameter :</label><br>
+        <input type="number" name="diameter" id="diameter" required><br>
+        <label for="area">Luas Lingkaran :</label><br>
+        <input type="text" name="area" id="area" readonly><br>
+        <label for="parameter">Keliling Lingkaran :</label><br>
+        <input type="text" name="parameter" id="parameter" readonly><br>
+    </form>
+<script>
+    document.getElementById('formlingkaran').addEventListener('change', function(e){
+        let diameter = e.target.value;
+        let radius = diameter / 2 ;
+
+        let area =  Math.PI* Math.pow(radius, 2);
+        document.getElementById('area').value = area.toFixed(2);
+
+        let parameter = 2* Math.PI * radius;
+        document.getElementById('parameter').value = parameter.toFixed(2);
+    })
+</script>
+</body>
+</html>
