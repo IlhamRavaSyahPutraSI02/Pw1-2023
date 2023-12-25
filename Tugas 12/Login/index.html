@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        
+        <form id="loginForm">
+            <h2>Form Login</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-warning" type="button" onclick="Login()">Login</button>
+                <br>
+            </div>
+            <p>username : ilham and password : password</p>
+            
+        </form>
+        <p id="message"></p>
+    </section>
+
+     <script src="main.js"></script>
+</body>
+</html>
